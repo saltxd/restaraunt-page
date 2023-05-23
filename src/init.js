@@ -91,3 +91,4 @@ function init() {
     // Append the form element to the contact form element.
     contactFormDiv.appendChild(form);
   }
+  export default init;
