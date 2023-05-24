@@ -1,5 +1,4 @@
-import { createContactTab } from "./contact";
-import { createMenuTab } from "./menu";
+
 
 function init() {
   const mainDiv = document.createElement("div");
@@ -87,6 +86,38 @@ function init() {
     const menuContent = createMenuTab();
     contentDiv.appendChild(menuContent);
   });
+
+  // Add styling to the mainDiv
+  mainDiv.style.backgroundColor = "#f5f5f5";
+  mainDiv.style.padding = "20px";
+
+  // Add styling to the menuDiv
+  menuDiv.style.padding = "10px";
+  menuDiv.style.backgroundColor = "#ffffff";
+  menuDiv.style.border = "1px solid #ddd";
+  menuDiv.style.marginBottom = "20px";
+
+  // Add styling to the photosDiv
+  photosDiv.style.display = "flex";
+  photosDiv.style.justifyContent = "space-between";
+  photosDiv.style.marginBottom = "20px";
+
+  // Add styling to the contactFormDiv
+  contactFormDiv.style.padding = "10px";
+  contactFormDiv.style.backgroundColor = "#ffffff";
+  contactFormDiv.style.border = "1px solid #ddd";
+
+  // ...
+
+  // Add styling to the tabs
+  contactTab.style.cursor = "pointer";
+  menuTab.style.cursor = "pointer";
+  contactTab.style.padding = "10px";
+  menuTab.style.padding = "10px";
+  contactTab.style.backgroundColor = "#f5f5f5";
+  menuTab.style.backgroundColor = "#f5f5f5";
+  contactTab.style.border = "1px solid #ddd";
+  menuTab.style.border = "1px solid #ddd";
 }
 
 export default init;
